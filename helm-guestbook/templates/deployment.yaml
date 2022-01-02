@@ -22,6 +22,8 @@ spec:
         my: label
     spec:
       containers:
+        - name: alpine
+          image: alpine:latest
         - name: {{ .Chart.Name }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}

@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: mk-gb
+spec:
+  generators:
+    - list:
+        elements:
+          - cluster: minikube
+            url: http://192.168.49.2
+  template:
+    metadata:
+      name: '{{cluster}}-guestbook'
+    spec:
+      source:
+        repoURL: https://github.com/andrii-codefresh/argocd-example-apps
+        targetRevision: HEAD
+        path: helm-guestbook
+      destination:
+        server: '{{url}}'
+        namespace: local

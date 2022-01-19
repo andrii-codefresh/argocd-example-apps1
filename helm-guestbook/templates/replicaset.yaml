@@ -18,7 +18,7 @@ spec:
       containers:
         - name: my-container-gb
           image: gcr.io/heptio-images/ks-guestbook-demo:0.2
-          imagePullPolicy: { { .Values.image.pullPolicy } }
+          imagePullPolicy: IfNotPresent
           env:
             - name: name1
               value: value1

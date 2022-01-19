@@ -13,7 +13,7 @@ spec:
         app: helm-guestbook
     spec:
       containers:
+        - name: my-container-gb
+          image: gcr.io/heptio-images/ks-guestbook-demo:0.2
         - name: my-container
           image: nginx
-        - name: my-container-gb
-          image: gcr.io/heptio-images/ks-guestbook-demo:0.1

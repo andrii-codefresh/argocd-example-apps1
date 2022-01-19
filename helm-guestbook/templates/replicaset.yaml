@@ -2,6 +2,9 @@ apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
   name: my-replicaset
+  labels:
+    app: helm-guestbook
+    release: helm-guestbook
 spec:
   replicas: 1
   selector:

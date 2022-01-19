@@ -18,5 +18,21 @@ spec:
       containers:
         - name: my-container-gb
           image: gcr.io/heptio-images/ks-guestbook-demo:0.2
+          imagePullPolicy: { { .Values.image.pullPolicy } }
+          env:
+            - name: name1
+              value: value1
+          ports:
+            - name: http
+              containerPort: 80
+              protocol: TCP
+          livenessProbe:
+            httpGet:
+              path: /
+              port: http
+          readinessProbe:
+            httpGet:
+              path: /
+              port: http
         - name: my-container
           image: nginx

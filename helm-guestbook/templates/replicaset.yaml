@@ -147,12 +147,6 @@ metadata:
       time: '2022-01-18T17:06:17Z'
   name: helm-guestbook-758c685576
   namespace: helm-guestbook
-  ownerReferences:
-    - apiVersion: apps/v1
-      blockOwnerDeletion: true
-      controller: true
-      kind: Application
-      name: helm-guestbook
 spec:
   replicas: 1
   selector:

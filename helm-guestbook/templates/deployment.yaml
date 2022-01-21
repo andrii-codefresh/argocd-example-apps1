@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
         - name: echoserver
-          image: k8s.gcr.io/echoserver:1.4
+          image: k8s.gcr.io/echoserver:1.2
           ports:
             - name: http
               containerPort: 80

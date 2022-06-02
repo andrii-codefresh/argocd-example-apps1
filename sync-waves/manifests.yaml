@@ -39,6 +39,7 @@ metadata:
 spec:
   selector:
     tier: backend
+  type: LoadBalancer
   ports:
     - protocol: TCP
       port: 8080

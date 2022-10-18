@@ -11,7 +11,7 @@ spec:
   template:
     metadata:
       annotations:
-        rollout.argoproj.io/revision: "2"
+        replicaset.argoproj.io/revision: "2"
       labels:
         app: guestbook-ui
     spec:

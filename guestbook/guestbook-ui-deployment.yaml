@@ -14,20 +14,6 @@ spec:
         app: guestbook-ui
     spec:
       containers:
-      - name: echoserver
-        image: k8s.gcr.io/echoserver:1.2
-        ports:
-          - name: http
-            containerPort: 80
-            protocol: TCP
-        livenessProbe:
-          httpGet:
-            path: /
-            port: http
-        readinessProbe:
-          httpGet:
-            path: /
-            port: http
       - image: gcr.io/heptio-images/ks-guestbook-demo:0.2
         name: guestbook-ui
         ports:

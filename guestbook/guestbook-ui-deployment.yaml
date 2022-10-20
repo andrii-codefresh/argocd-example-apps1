@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: echoserver
-        image: k8s.gcr.io/echoserver:1.2
+        image: k8s.gcr.io/echoserver:1.1
         ports:
           - name: http
             containerPort: 80
@@ -28,7 +28,7 @@ spec:
           httpGet:
             path: /
             port: http
-      - image: gcr.io/heptio-images/ks-guestbook-demo:0.1
+      - image: gcr.io/heptio-images/ks-guestbook-demo:0.2
         name: guestbook-ui
         ports:
         - containerPort: 80

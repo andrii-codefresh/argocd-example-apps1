@@ -24,7 +24,7 @@ apiVersion: apps/v1
 metadata:
   name: echoserver
 spec:
-  replicas: 1
+  replicas: 2
   revisionHistoryLimit: 3
   selector:
     matchLabels:

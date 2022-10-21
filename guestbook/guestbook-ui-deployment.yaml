@@ -35,7 +35,7 @@ spec:
         app: echoserver
     spec:
       containers:
-        - image: k8s.gcr.io/echoserver:1.2
+        - image: k8s.gcr.io/echoserver:1.1
           name: echoserver
           ports:
             - containerPort: 80

@@ -19,23 +19,23 @@ spec:
         ports:
         - containerPort: 80
 ---
-#kind: Deployment
-#apiVersion: apps/v1
-#metadata:
-#  name: echoserver
-#spec:
-#  replicas: 1
-#  revisionHistoryLimit: 3
-#  selector:
-#    matchLabels:
-#      app: echoserver
-#  template:
-#    metadata:
-#      labels:
-#        app: echoserver
-#    spec:
-#      containers:
-#        - image: k8s.gcr.io/echoserver:1.2
-#          name: echoserver
-#          ports:
-#            - containerPort: 80
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: echoserver
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: echoserver
+  template:
+    metadata:
+      labels:
+        app: echoserver
+    spec:
+      containers:
+        - image: k8s.gcr.io/echoserver:1.2
+          name: echoserver
+          ports:
+            - containerPort: 80

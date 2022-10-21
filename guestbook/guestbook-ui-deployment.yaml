@@ -14,7 +14,7 @@ spec:
         app: guestbook-ui
     spec:
       containers:
-      - image: gcr.io/heptio-images/ks-guestbook-demo:0.1
+      - image: gcr.io/heptio-images/ks-guestbook-demo:0.2
         name: guestbook-ui
         ports:
         - containerPort: 80
@@ -24,7 +24,7 @@ apiVersion: apps/v1
 metadata:
   name: echoserver
 spec:
-  replicas: 2
+  replicas: 1
   revisionHistoryLimit: 3
   selector:
     matchLabels:
@@ -35,7 +35,7 @@ spec:
         app: echoserver
     spec:
       containers:
-        - image: k8s.gcr.io/echoserver:1.1
+        - image: k8s.gcr.io/echoserver:1.2
           name: echoserver
           ports:
             - containerPort: 80

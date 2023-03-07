@@ -2,6 +2,5 @@ service:
   type: LoadBalancer
 image:
   tags:
-    - 0.1
-    - 0.2
-    -
+    tag1: 0.1
+    tag2: 0.2

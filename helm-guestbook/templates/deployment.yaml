@@ -38,7 +38,7 @@ spec:
 #              path: /
 #              port: http
         - name: {{ .Chart.Name }}
-          image: "{{ .Values.image.repository }}:{{ .Values.image.tags.0 }}"
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tags.tag1 }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           env:
             - name: name1

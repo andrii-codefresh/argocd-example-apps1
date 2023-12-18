@@ -3,14 +3,14 @@ kind: Rollout
 metadata:
   name: rollout-test-3
 spec:
-  replicas: 2
+  replicas: 1
   strategy:
     canary:
       steps:
         - setWeight: 50
-        - pause: {duration: 10}
+        - pause: {duration: 100}
         - setWeight: 80
-        - pause: {duration: 10}
+        - pause: {duration: 100}
   revisionHistoryLimit: 3
   selector:
     matchLabels:
@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: guestbook-ui
-          image: gcr.io/heptio-images/ks-guestbook-demo:0.1
+          image: gcr.io/heptio-images/ks-guestbook-demo:0.2
           ports:
             - name: http
               containerPort: 8080

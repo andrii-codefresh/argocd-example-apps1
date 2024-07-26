@@ -7,11 +7,16 @@ spec:
   strategy:
     canary:
       steps:
-        - pause: {duration: 30}
-        - setWeight: 50
-        - pause: {duration: 100}
-        - setWeight: 80
-        - pause: {duration: 100}
+        - name: First pause
+          pause: {duration: 30}
+        - name: First setWeight
+          setWeight: 50
+        - name: Second pause
+          pause: {duration: 100}
+        - name: Second setWeight
+          setWeight: 80
+        - name: Third pause
+          pause: {duration: 100}
   revisionHistoryLimit: 3
   selector:
     matchLabels:
@@ -23,7 +28,7 @@ spec:
     spec:
       containers:
         - name: guestbook-ui
-          image: gcr.io/heptio-images/ks-guestbook-demo:0.2
+          image: gcr.io/heptio-images/ks-guestbook-demo:0.1
           ports:
             - name: http
               containerPort: 8080

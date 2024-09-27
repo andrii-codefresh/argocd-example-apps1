@@ -1,5 +1,6 @@
 {
   "parent": {
+    "versionNumber": "7.1.1",
     "items": [
       { "versionNumber": "7.30.30" }
     ]

@@ -3,6 +3,16 @@
     "versionNumber": "7.1.1",
     "items": [
       { "versionNumber": "7.30.30" }
+    ],
+    "many": [
+      {
+        "name": "first",
+        "versionNumber": "11.1.1"
+      },
+      {
+        "name": "second",
+        "versionNumber": "12.1.1"
+      }
     ]
   }
 }

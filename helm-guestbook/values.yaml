@@ -11,7 +11,9 @@ tags:
   tag1: 0.1
   tag2: 0.2
 
-
+Big-Name:
+  image:
+    tag: develop-267472
 
 
 # Default values for helm-guestbook.

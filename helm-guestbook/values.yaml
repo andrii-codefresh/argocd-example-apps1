@@ -13,7 +13,7 @@ tags:
 
 Big-Name:
   image:
-    tag: develop-267472
+    tag: develop-267443
 
 
 # Default values for helm-guestbook.

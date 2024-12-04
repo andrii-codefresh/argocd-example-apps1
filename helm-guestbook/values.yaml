@@ -4,7 +4,7 @@ service:
 
 image:
   repository: gcr.io/heptio-images/ks-guestbook-demo
-  tag: 0.1
+  tag: 0.2
   pullPolicy: IfNotPresent
 
 tags:
@@ -13,7 +13,7 @@ tags:
 
 Big-Name:
   image:
-    tag: develop-277777
+    tag: develop-777777
 
 
 # Default values for helm-guestbook.

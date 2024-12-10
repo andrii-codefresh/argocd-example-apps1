@@ -4,13 +4,16 @@ service:
 
 image:
   repository: gcr.io/heptio-images/ks-guestbook-demo
-  tag: 0.1
+  tag: 0.2
   pullPolicy: IfNotPresent
 
 tags:
   tag1: 0.1
   tag2: 0.2
 
+Big-Name:
+  image:
+    tag: develop-111
 
 
 

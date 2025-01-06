@@ -1,6 +1,0 @@
-dependencies:
-- name: Chart-Nginx
-  repository: file://../../Chart-Nginx
-  version: 0.1.0
-digest: sha256:30f6a5e151345142ed0a2b7699eb26d97e9bc6e84e9901a97e50b31110005b55
-generated: "2024-12-29T16:21:26.556959+02:00"

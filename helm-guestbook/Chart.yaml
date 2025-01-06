@@ -25,4 +25,4 @@ appVersion: "1.0"
 dependencies:
   - name: Chart-Nginx
     version: 0.1.0
-    repository: "file://../../Chart-Nginx"
+    repository: "file://../Chart-Nginx"

@@ -2,7 +2,7 @@ namespace: local7
 replicaCount: 1
 image:
   repository: nginx
-  tag: "latest"
+  tag: "1.26"
   pullPolicy: IfNotPresent
 service:
   type: ClusterIP

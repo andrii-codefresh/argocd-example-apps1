@@ -9,6 +9,6 @@ images:
   - newTag: 1.25.4
   - newTag: "1.25"
   - newTag: "1.25"
-  - newTag: "1"
+  - newTag: 1
   - newTag: 1254ac
 kind: Kustomization

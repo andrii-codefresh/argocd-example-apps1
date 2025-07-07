@@ -6,6 +6,9 @@ resources:
 apiVersion: kustomize.config.k8s.io/v1beta1
 images:
   - newTag: v5
-  - name: nginx
-    newTag: 1.25.4
+  - newTag: 1.25.4
+  - newTag: 1.25
+  - newTag: "1.25"
+  - newTag: 1
+  - newTag: 1254ac
 kind: Kustomization

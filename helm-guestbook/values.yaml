@@ -3,8 +3,8 @@ service:
   port: 80
 
 image:
-  repository: nginx:1.25.3
-  tag: 0.1
+  repository: nginx
+  tag: 1.25.3
   pullPolicy: IfNotPresent
 
 tags:

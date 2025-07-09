@@ -3,7 +3,7 @@ service:
   port: 80
 
 image:
-  repository: gcr.io/heptio-images/ks-guestbook-demo
+  repository: gcr.io/google-samples/gb-frontend:v5
   tag: 0.1
   pullPolicy: IfNotPresent
 

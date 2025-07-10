@@ -22,7 +22,7 @@ int234:
   value: num-ver-40
 
 arr:
-  - tag: 1.25.0
+  - tag: 1.25.1
 
 # Default values for helm-guestbook.
 # This is a YAML-formatted file.

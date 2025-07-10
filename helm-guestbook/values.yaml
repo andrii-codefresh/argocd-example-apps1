@@ -4,7 +4,7 @@ service:
 
 image:
   repository: nginx
-  tag: 1.25.1
+  tag: 1.25.0
   pullPolicy: IfNotPresent
 
 tags:

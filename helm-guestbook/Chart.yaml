@@ -26,3 +26,7 @@ appVersion: "1.0"
 #  - name: Chart-Nginx
 #    version: 0.1.0
 #    repository: "file://../Chart-Nginx"
+dependencies:
+  - name: nginx
+    version: 13.2.19
+    repository: "https://charts.bitnami.com/bitnami"

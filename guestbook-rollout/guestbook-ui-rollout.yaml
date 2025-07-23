@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
         - name: guestbook-ui
-          image: gcr.io/google-samples/gb-frontend:v4
+          image: gcr.io/google-samples/gb-frontend:v5
           ports:
             - name: http
               containerPort: 8080
